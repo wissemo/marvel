@@ -10,10 +10,11 @@ A Marvel comics listing app using marvel api and Jetpack Compose. Based on MVVM 
 ## Screenshots
 
 <p>
-<img src="screenshots/1.JPEG" width="24%" height="40%"/>
-<img src="screenshots/2.JPEG" width="24%" height="40%"/>
-<img src="screenshots/3.JPEG" width="24%" height="40%"/>
-<img src="screenshots/4.JPEG" width="24%" height="40%"/>
+<img src="screenshots/1.JPEG" width="19%" height="35%"/>
+<img src="screenshots/2.JPEG" width="19%" height="35%"/>
+<img src="screenshots/3.JPEG" width="19%" height="35%"/>
+<img src="screenshots/4.JPEG" width="19%" height="35%"/>
+<img src="screenshots/5.JPEG" width="19%" height="35%"/>
 </p>
 
 ## Technologies
