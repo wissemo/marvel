@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Marvel</string>
+    <!-- Splash screen-->
+    <string name="logo_description" >Marvel Logo</string>
+
+    <!-- Comics screen-->
+    <string name="comics_screen_title">Comics</string>
+    <string name="comics_screen_edit_text_hint">Title</string>
+    <string name="comics_screen_clear_icon_description" >Clear</string>
+    <string name="comics_screen_search_icon_description" >Search</string>
+    <string name="comics_screen_favorite_icon_description" >My Comics</string>
+    <string name="comic_loading">Loading…</string>
+    <string name="comic_error_icon_content_description">Error icon</string>
+    <string name="comic_end_icon_content_description">End icon</string>
+    <string name="comic_not_found_icon_content_description">No comics icon</string>
+    <string name="comic_all_loaded">All comics have been loaded</string>
+    <string name="no_comic_found">No comics found</string>
+
+    <!-- Favorite Comics screen-->
+    <string name="favorite_comics_screen_title">Favorites</string>
+    <string name="favorite_comics_delete_icon_description">Delete icon</string>
+
+    <!-- Favorite Comics screen-->
+    <string name="favorite_comics_price">Price</string>
+    <string name="favorite_comics_pages">Pages</string>
+    <string name="favorite_comics_format">Format</string>
+    <string name="favorite_comics_creators">Creators</string>
+    <string name="favorite_comics_characters">Characters</string>
+
+    <!-- errors-->
+    <string name="errors_server_failed">An error has occurred with our server please try again later</string>
+    <string name="errors_general">An error occurred please try again later</string>
+    <string name="errors_cash_failed">An error has occurred locally, please clear app data and try again</string>
+    <string name="errors_no_connexion">You are not connected to the internet, please check your connection and try again</string>
+</resources>
