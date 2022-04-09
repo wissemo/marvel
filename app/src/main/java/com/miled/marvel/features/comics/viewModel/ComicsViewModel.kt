@@ -12,7 +12,6 @@ import com.miled.marvel.features.comics.data.models.ComicsResult
 import com.miled.marvel.features.comics.repository.ComicsRepository
 import com.miled.marvel.utils.Constants.LOAD_SIZE
 import kotlinx.coroutines.launch
-import timber.log.Timber
 
 class ComicsViewModel(
     private val comicsRepository: ComicsRepository
@@ -21,6 +20,7 @@ class ComicsViewModel(
 
     @VisibleForTesting
     var totalCount: Int = 0
+
     @VisibleForTesting
     var offset: Int = 0
     var loadedItems: Int = 0
@@ -40,11 +40,11 @@ class ComicsViewModel(
     }
 
     internal fun setSearchTitle(search: String) {
-        _searchByTitle.value = search.trim()
+        _searchByTitle.value = search
     }
 
     internal fun clearSearchTitle() {
-        if (_searchByTitle.value.isNotEmpty()) {
+        if (_searchByTitle.value.isNotBlank()) {
             _searchByTitle.value = ""
             _comicsList.value = emptyList()
             loadComics()
@@ -52,9 +52,10 @@ class ComicsViewModel(
     }
 
     internal fun searchByTitle() {
-        Timber.i("searchSearchByTitle $_searchByTitle")
-        _comicsList.value = emptyList()
-        loadComics()
+        if (_searchByTitle.value.isNotBlank()) {
+            _comicsList.value = emptyList()
+            loadComics()
+        }
     }
 
     private fun loadComics() {
